@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+        <div id="main">
+            
+            <div id="bar"></div>
+
+            <h3>Local Storage - Sign In <span id="sign_in_page"><a href="index.html">I want to Register</a></span></h3>
+
+            <form method="post">
+
+            <label for="userName">ENTER USERNAME</label>
+            <br>
+            <div class="userInputBox" onfocusout="hideBorderStyle(this)" id="getUserNameS">
+            <input type="text" name="userName" id="userNameS" placeholder="Enter Here" class="inputStyle" onfocus="borderStyle('getUserNameS','userNameS')" onblur="this.placeholder = 'Enter Here'">
+            </div>
+            <br>
+            <label for="userName">ENTER KEY</label>
+            <br>
+            <div class="userInputBox" onfocusout="hideBorderStyle(this)" id="getKeyS">
+            <input type="text" name="key" id="keyS" placeholder="Enter Here" class="inputStyle" onfocus="borderStyle('getKeyS','keyS')" onblur="this.placeholder = 'Enter Here'">
+            </div>
+
+            <button id="sign_up" onclick="check()">SIGN IN</button>
+
+            </form>
+
+        </div>
+
+    </body>
+    <script src="js/app.js" ></script>
+</html>
